@@ -7,7 +7,7 @@ if(isset($_POST['submit']))
 	
 	if($login&&$password){
     $password=md5($password);
-    $db = mysqli_connect('localhost','***USER***','***PASSWORD***','***BDpanier***')
+    $db = mysqli_connect('localhost','root','','panier')
     or die('could not connect to database');
  
     $query=mysqli_query($db,"SELECT * FROM client WHERE login='".$_POST['login']."' && Passwd='".$_POST['password']."'");
