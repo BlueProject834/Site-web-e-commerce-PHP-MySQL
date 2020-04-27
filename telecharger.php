@@ -1,6 +1,6 @@
 <?php
   
-$file="Rapport_PHP.docx";
+$file="Rapport_PHP.pdf";
  
 $taille=filesize($file);
 header('Content-Type: application/force-download; name="'.$file.'"');
